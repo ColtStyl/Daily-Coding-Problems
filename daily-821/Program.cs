@@ -1,5 +1,7 @@
 ﻿using System;
 
+// To view the problem this solution belongs to and understand the solution better, read the README.
+
 namespace daily_821
 {
     class Program
