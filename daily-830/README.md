@@ -31,3 +31,10 @@ Example of the algorithm :
 5.We map those indexes to the original values of the array : [7,76,415,10]
 6.We assemble our biggest number : 77641510
 
+Edit : 
+After thinking about it a bit more, it seems there is an odd case that I haven't thought about.
+If our array is : [10,7,7611,41,414]
+The modified numbers are : [1011,7777,7611,4144,4144]
+And so we have two 4144, but only one order is correct. When I ran my original algorithm with that array, it gave me a number that wasn't the biggest : 776,114,141,410 instead of 776,114,144,110.
+The problem comes from the order of the original array and the fact that the modified numbers don't account for the fact that 414 should be placed before 41. The bigger number should always be before because it's always the order that gives the biggest number.
+However a simple solution is found : Since when the bigger number is before the smaller number in the array, the final order is correct, we just have to sort the initial array and reverse it. Problem solved.

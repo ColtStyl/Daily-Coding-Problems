@@ -47,7 +47,8 @@ function AssembleBiggestNumber(array)
     return parseInt(biggestNumber,10);
 }
 
-var numberArray = [10,7,76,415];
+var numberArray = [10,7,7611,41,414];
+numberArray = numberArray.sort().reverse();
 var biggestNumber = AssembleBiggestNumber(numberArray);
 
 console.log(biggestNumber);
