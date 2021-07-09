@@ -24,15 +24,15 @@ By doing this and sorting the set, we get the correct order that gives us the bi
 
 Example of the algorithm :
 
-1.Original array : [10,7,76,415]
+1. Original array : [10,7,76,415]
 
-2.Dictionary with numbers converted to strings (keys are the indexes) : ["0":"10", "1":"7", "2":"76", "3":"415"]
+2. Dictionary with numbers converted to strings (keys are the indexes) : ["0":"10", "1":"7", "2":"76", "3":"415"]
 
-3.Same dictionary with modified numbers (the longest length is 3) : ["0":"101", "1":"777", "2":"767", "3":"415"]
+3. Same dictionary with modified numbers (the longest length is 3) : ["0":"101", "1":"777", "2":"767", "3":"415"]
 
-4.Now we sort it by value and get the indexes : [ '1', '2', '3', '0' ]
+4. Now we sort it by value and get the indexes : [ '1', '2', '3', '0' ]
 
-5.We map those indexes to the original values of the array : [7,76,415,10]
+5. We map those indexes to the original values of the array : [7, 76, 415, 10]
 
-6.We assemble our biggest number : 77641510
+6. We assemble our biggest number : 77641510
 
