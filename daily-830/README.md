@@ -13,6 +13,7 @@ I started out thinking about a solution that involved comparing each digit of th
 The most important thing to look for in all the values given is the first digit, because numbers with the same first digit are the numbers that you want to compare to each other to find out which one goes first, second, etc... (because obviously the first digits are sorted when appended, and it's not the difficult part)
 
 For example : 445 and 4459
+
 Both these number start with 4 so we know we have to find out which one goes first and which one goes second.
 Between 4454459 and 4459445, it is quite obvious which one is the biggest. But algorithmically, finding out the correct order, especially on a large set of them, can be tricky to formulate.
 
