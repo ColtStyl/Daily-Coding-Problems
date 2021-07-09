@@ -13,6 +13,7 @@ I started out thinking about a solution that involved comparing each digit of th
 The most important thing to look for in all the values given is the first digit, because numbers with the same first digit are the numbers that you want to compare to each other to find out which one goes first, second, etc... (because obviously the first digits are sorted when appended, and it's not the difficult part)
 
 For example : 445 and 4459
+
 Both these number start with 4 so we know we have to find out which one goes first and which one goes second.
 Between 4454459 and 4459445, it is quite obvious which one is the biggest. But algorithmically, finding out the correct order, especially on a large set of them, can be tricky to formulate.
 
@@ -24,12 +25,17 @@ By doing this and sorting the set, we get the correct order that gives us the bi
 
 Example of the algorithm :
 
-1.Original array : [10,7,76,415]
-2.Dictionary with numbers converted to strings (keys are the indexes) : ["0":"10", "1":"7", "2":"76", "3":"415"]
-3.Same dictionary with modified numbers (the longest length is 3) : ["0":"101", "1":"777", "2":"767", "3":"415"]
-4.Now we sort it by value and get the indexes : [ '1', '2', '3', '0' ]
-5.We map those indexes to the original values of the array : [7,76,415,10]
-6.We assemble our biggest number : 77641510
+1. Original array : [10,7,76,415]
+
+2. Dictionary with numbers converted to strings (keys are the indexes) : ["0":"10", "1":"7", "2":"76", "3":"415"]
+
+3. Same dictionary with modified numbers (the longest length is 3) : ["0":"101", "1":"777", "2":"767", "3":"415"]
+
+4. Now we sort it by value and get the indexes : [ '1', '2', '3', '0' ]
+
+5. We map those indexes to the original values of the array : [7, 76, 415, 10]
+
+6. We assemble our biggest number : 77641510
 
 Edit : 
 After thinking about it a bit more, it seems there is an odd case that I haven't thought about.
