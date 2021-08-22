@@ -38,7 +38,7 @@ function AssembleBiggestNumber(array)
     //We sort the map by value and return the keys (which is the correct index order to create the biggest number)
     indexOrder = SortObjectKeys(stringMap);
 
-    //We create the biggest number by appending all the values in array using the correct index order
+    //We create the biggest number by appending to the biggestNumber string all the values in array using the correct index order
     for(let i = 0; i < indexOrder.length; i++)
     {
         biggestNumber += array[indexOrder[i]];
